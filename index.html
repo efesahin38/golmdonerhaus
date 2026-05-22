@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Golm Donerhaus in Potsdam-Golm – Frische Döner, türkische Spezialitäten und Online-Bestellung über Lieferando."
+    />
+    <title>Startseite | Golm Donerhaus</title>
+    <link rel="icon" href="images/logo-circle.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/logo-circle.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header scrolled">
+      <div class="container header-inner">
+        <a href="#start" class="logo">
+          <img
+            class="logo-mark"
+            src="images/logo-circle.png"
+            alt="Golm Donerhaus"
+            width="40"
+            height="40"
+          />
+          <span>Golm Donerhaus</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="#start">Startseite</a>
+          <a href="#speisekarte">Speisekarte</a>
+          <a href="#ueber-uns">Über uns</a>
+          <a href="#kontakt">Kontakt</a>
+          <a class="btn btn-primary btn-order-mobile" data-order>Online Bestellen</a>
+        </nav>
+
+        <a class="btn btn-primary header-cta-desktop" data-order>
+          Online Bestellen
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="start">
+        <div class="hero-bg" role="img" aria-label="Golm Donerhaus Food Truck"></div>
+        <div class="container hero-content">
+          <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            Potsdam-Golm
+          </span>
+          <h1>Golm <span class="accent">Donerhaus</span></h1>
+          <p class="hero-text">
+            Frisch zubereitete Döner, knackige Salate und traditionelle türkische
+            Gerichte — mit Liebe gemacht in Potsdam-Golm.
+          </p>
+          <div class="hero-actions">
+            <a href="#speisekarte" class="btn btn-primary">Speisekarte ansehen</a>
+            <a class="btn btn-outline" data-order>
+              Online Bestellen
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              Mo–So: 10:00 – 21:30 Uhr
+            </span>
+            <span class="hero-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Abholung &amp; Lieferung
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="speisekarte">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Unsere Speisekarte</span>
+            <h2 class="section-title">Frisch &amp; Lecker</h2>
+            <p class="section-subtitle">
+              Entdecken Sie unsere vielfältige Auswahl an frisch zubereiteten Gerichten.
+              Alle Preise entsprechen unserer aktuellen Lieferando-Karte.
+            </p>
+          </header>
+
+          <div class="menu-nav-wrap">
+            <nav class="menu-nav" id="menu-nav" aria-label="Speisekarten-Kategorien"></nav>
+          </div>
+
+          <div class="menu-panel" id="menu-panel">
+            <div class="menu-panel-visual">
+              <img
+                id="menu-category-image"
+                src="images/menus/hero.png"
+                alt="Menükategorie"
+                width="600"
+                height="450"
+              />
+            </div>
+            <div class="menu-panel-content">
+              <h3 class="menu-category-title" id="menu-category-title">Menüs</h3>
+              <ul class="menu-list" id="menu-category-list"></ul>
+            </div>
+          </div>
+
+          <div class="menu-cta">
+            <p>Jetzt bequem online bestellen über Lieferando!</p>
+            <a class="btn btn-primary" data-order>
+              Online Bestellen
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ueber-uns">
+        <div class="container about-grid">
+          <div class="about-text">
+            <span class="section-label">Über uns</span>
+            <h2 class="section-title">Willkommen bei Golm Donerhaus</h2>
+            <p>
+              Seit Jahren sind wir Ihr vertrauenswürdiger Döner-Imbiss in Potsdam-Golm.
+              Wir servieren authentische türkische Küche mit frischen Zutaten und
+              traditionellen Rezepten.
+            </p>
+            <p>
+              Ob Döner, Dürüm, Falafel oder unsere leckeren Tellergerichte — bei uns
+              finden Sie immer etwas Passendes. Besuchen Sie uns vor Ort oder bestellen
+              Sie bequem online über Lieferando.
+            </p>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🔥</div>
+                <h4>Frisch vom Spieß</h4>
+                <p>Unser Dönerfleisch wird täglich frisch am Spieß zubereitet.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🥬</div>
+                <h4>Frische Zutaten</h4>
+                <p>Knackiges Gemüse und Salat aus regionaler Lieferung.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">❤️</div>
+                <h4>Mit Liebe gemacht</h4>
+                <p>Traditionelle türkische Rezepte, liebevoll zubereitet.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">⚡</div>
+                <h4>Schnelle Zubereitung</h4>
+                <p>Ihre Bestellung — frisch und schnell fertig.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-gallery about-gallery-duo">
+            <img
+              src="images/about/welcome-1.jpg"
+              alt="Golm Donerhaus Standort"
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+            <img
+              src="images/about/welcome-2.jpg"
+              alt="Golm Donerhaus in Potsdam-Golm"
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="kontakt">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Kontakt</span>
+            <h2 class="section-title">Besuchen Sie uns</h2>
+            <p class="section-subtitle">
+              Wir freuen uns auf Ihren Besuch in Potsdam-Golm.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="map-wrap">
+              <iframe
+                title="Standort Golm Donerhaus auf Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.8!2d12.8756!3d52.4012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85f2e8b8b8b8b%3A0x0!2zS2FybC1MaWVia25lY2h0LVN0cmHDn2UgMjgsIDE0NDc2IFBvdHNkYW0!5e0!3m2!1sde!2sde!4v1716400000000!5m2!1sde!2sde"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Adresse</h4>
+                  <p>Karl-Liebknecht-Straße 28<br />14476 Potsdam</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Öffnungszeiten</h4>
+                  <p>Mo–So: 10:00 – 21:30 Uhr</p>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a
+                  class="btn btn-dark"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Karl-Liebknecht-Straße+28,+14476+Potsdam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Route planen
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                  </svg>
+                </a>
+                <a class="btn btn-primary" data-order>
+                  Online Bestellen
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#start" class="logo">
+              <img
+                class="logo-mark"
+                src="images/logo-circle.png"
+                alt="Golm Donerhaus"
+                width="40"
+                height="40"
+              />
+              <span>Golm Donerhaus</span>
+            </a>
+            <p>
+              Frisch zubereitete Döner und türkische Spezialitäten in Potsdam-Golm.
+              Besuchen Sie uns oder bestellen Sie online.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Schnellzugriff</h4>
+            <ul>
+              <li><a href="#speisekarte">Speisekarte</a></li>
+              <li><a href="#ueber-uns">Über uns</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+              <li><a data-order>Online Bestellen</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <ul>
+              <li>Karl-Liebknecht-Straße 28</li>
+              <li>14476 Potsdam</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p>
+            Plattform der EU-Kommission zur Online-Streitbeilegung:
+            <a
+              href="https://ec.europa.eu/consumers/odr"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://ec.europa.eu/consumers/odr</a
+            >.
+          </p>
+          <p>
+            Wir sind ein professioneller Anbieter.
+            <a
+              href="https://www.lieferando.de/kundenservice/artikel/welchen-status-haben-die-gelisteten-restaurants?stripMe=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Erfahre mehr</a
+            >
+            darüber, wie wir gemeinsam mit
+            <a href="https://www.lieferando.de" target="_blank" rel="noopener noreferrer"
+              >Lieferando.de</a
+            >
+            die Verbraucherverantwortung übernehmen.
+          </p>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Golm Donerhaus — Alle Rechte vorbehalten.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/site-base.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
