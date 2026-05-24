@@ -6,7 +6,7 @@ const MENU_CATEGORIES = [
     id: "menus",
     name: "Menüs",
     icon: "🍔",
-    image: "images/menus/hero.png",
+    image: "images/menus/menu.png",
     items: [
       {
         name: "Hamburger Menü",
@@ -24,7 +24,7 @@ const MENU_CATEGORIES = [
     id: "salate",
     name: "Salate",
     icon: "🥗",
-    image: "images/salate/hero.png",
+    image: "images/salate/salate.png",
     items: [
       { name: "Gemischter Salat", price: "ab 4,50 €" },
       { name: "Gemischter Salat mit Käse", price: "6,00 €" },
@@ -35,7 +35,7 @@ const MENU_CATEGORIES = [
     id: "doner",
     name: "Döner",
     icon: "🥙",
-    image: "images/doner/hero.png",
+    image: "images/doner/doner.png",
     items: [
       { name: "Döner", price: "6,50 €", desc: "im Brot" },
       { name: "Döner mit Käse", price: "7,00 €" },
@@ -57,7 +57,7 @@ const MENU_CATEGORIES = [
     id: "tellergerichte",
     name: "Tellergerichte",
     icon: "🍽️",
-    image: "images/Tellergerichte/hero.png",
+    image: "images/Tellergerichte/tellergerichte.png",
     items: [
       { name: "Döner-Teller", price: "9,50 €" },
       { name: "Döner-Teller mit Käse", price: "10,00 €" },
@@ -70,7 +70,7 @@ const MENU_CATEGORIES = [
     id: "vegetarisch",
     name: "Vegetarisch",
     icon: "🌱",
-    image: "images/Vegetarisch/hero.png",
+    image: "images/Vegetarisch/vegetarisch.png",
     items: [
       { name: "Vegetarischer Döner", price: "5,00 €", desc: "mit Gemüse und Käse" },
       { name: "Falafel im Brot und Salat Sos", price: "6,50 €" },
@@ -83,7 +83,7 @@ const MENU_CATEGORIES = [
     id: "burger",
     name: "Burger",
     icon: "🍔",
-    image: "images/burger/hero.png",
+    image: "images/burger/burgers.png",
     items: [
       { name: "Hamburger", price: "5,00 €" },
       { name: "Chickenburger", price: "5,50 €" },
@@ -93,7 +93,7 @@ const MENU_CATEGORIES = [
     id: "snacks",
     name: "Snacks",
     icon: "🍟",
-    image: "images/snacks/hero.png",
+    image: "images/snacks/snakcs.png",
     items: [
       { name: "Chicken Nuggets (6 Stück)", price: "5,00 €" },
       {
@@ -109,7 +109,7 @@ const MENU_CATEGORIES = [
     id: "desserts",
     name: "Desserts",
     icon: "🍰",
-    image: "images/desserts/hero.png",
+    image: "images/desserts/desserts.png",
     items: [
       { name: "Baklava (250g)", price: "4,00 €" },
       { name: "Sesam-Kekse (250g)", price: "4,00 €" },
@@ -119,7 +119,7 @@ const MENU_CATEGORIES = [
     id: "getranke",
     name: "Getränke",
     icon: "🥤",
-    image: "images/getranke/hero.png",
+    image: "images/getranke/getranke.png",
     items: [
       { name: "Coca-Cola 0,33l (MEHRWEG)", price: "1,85 €" },
       { name: "Coca-Cola 0,5l (MEHRWEG)", price: "2,35 €" },

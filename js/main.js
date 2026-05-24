@@ -44,7 +44,14 @@ function renderMenu() {
   ).join("");
 
   nav.querySelectorAll(".menu-pill").forEach((pill) => {
-    pill.addEventListener("click", () => showCategory(pill.dataset.category));
+    pill.addEventListener("click", () => {
+      showCategory(pill.dataset.category);
+      pill.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest"
+      });
+    });
   });
 
   showCategory(MENU_CATEGORIES[0].id);
@@ -55,6 +62,7 @@ function setupNav() {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav-links");
   const links = document.querySelectorAll(".nav-links a");
+  const backdrop = document.getElementById("nav-backdrop");
 
   const onScroll = () => {
     header?.classList.toggle("scrolled", window.scrollY > 40);
@@ -62,18 +70,24 @@ function setupNav() {
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  const closeNav = () => {
+    nav?.classList.remove("open");
+    backdrop?.classList.remove("open");
+    toggle?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("nav-open");
+  };
+
   toggle?.addEventListener("click", () => {
     const open = nav?.classList.toggle("open");
+    backdrop?.classList.toggle("open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     document.body.classList.toggle("nav-open", open);
   });
 
+  backdrop?.addEventListener("click", closeNav);
+
   links.forEach((link) => {
-    link.addEventListener("click", () => {
-      nav?.classList.remove("open");
-      toggle?.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
-    });
+    link.addEventListener("click", closeNav);
   });
 
   document.querySelectorAll("[data-order]").forEach((el) => {
